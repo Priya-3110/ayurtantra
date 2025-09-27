@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #FEFEFE; /* white */
+    --color-foreground: #1A1A1A; /* near-black */
+    --color-border: #E5E7EB; /* gray-200 */
+    --color-input: #FEFEFE; /* white */
+    --color-ring: #2D5A27; /* deep-sage-green */
+    
+    /* Card Colors */
+    --color-card: #FEFEFE; /* white */
+    --color-card-foreground: #1A1A1A; /* near-black */
+    --color-popover: #FEFEFE; /* white */
+    --color-popover-foreground: #1A1A1A; /* near-black */
+    
+    /* Muted Colors */
+    --color-muted: #F8F9FA; /* warm-gray-50 */
+    --color-muted-foreground: #6B7280; /* gray-500 */
+    
+    /* Primary Colors */
+    --color-primary: #2D5A27; /* deep-sage-green */
+    --color-primary-foreground: #FEFEFE; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #8B4513; /* terracotta-brown */
+    --color-secondary-foreground: #FEFEFE; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #F4A460; /* sandy-brown */
+    --color-accent-foreground: #1A1A1A; /* near-black */
+    
+    /* State Colors */
+    --color-destructive: #DC2626; /* red-600 */
+    --color-destructive-foreground: #FEFEFE; /* white */
+    --color-success: #059669; /* emerald-600 */
+    --color-success-foreground: #FEFEFE; /* white */
+    --color-warning: #D97706; /* amber-600 */
+    --color-warning-foreground: #FEFEFE; /* white */
+    --color-error: #DC2626; /* red-600 */
+    --color-error-foreground: #FEFEFE; /* white */
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-body {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .font-caption {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .font-data {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
